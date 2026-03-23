@@ -1,0 +1,62 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Live Weather App</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <div class="app">
+  <header>
+    <h1>Nzimande</h1>
+    <span>Live Weather</span>
+  </header>
+ 
+  <div class="search-row">
+    <div class="search-wrap">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      <input type="text" id="cityInput" placeholder="Search city..." autocomplete="off">
+      <div class="autocomplete" id="autocomplete"></div>
+    </div>
+    <button class="btn" id="addBtn">Add City</button>
+  </div>
+ 
+  <div class="unit-toggle">
+    <button class="unit-btn active" data-unit="metric">°C</button>
+    <button class="unit-btn" data-unit="imperial">°F</button>
+  </div>
+ 
+  <div class="tabs">
+    <button class="tab active" data-tab="cities">My Cities</button>
+    <button class="tab" data-tab="saved">Saved Searches</button>
+  </div>
+ 
+  <div class="panel active" id="cities-panel">
+    <div class="city-grid" id="cityGrid">
+      <div class="empty" id="emptyState">
+        <div class="empty-icon">🌍</div>
+        <div class="empty-title">No cities yet</div>
+        <div class="empty-sub">Search for a city above to see live weather</div>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="panel" id="saved-panel">
+    <div class="saved-list" id="savedList">
+      <div class="empty" id="savedEmpty">
+        <div class="empty-icon">🔖</div>
+        <div class="empty-title">No saved searches</div>
+        <div class="empty-sub">Add a city then save it for quick access later</div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<div class="toast" id="toast"></div>
+        <script src="script.js"></script>
+    </body>
+</html>
