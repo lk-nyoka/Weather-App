@@ -15,15 +15,10 @@ A modern weather web app built using HTML, CSS, and JavaScript.
 - JavaScript
 - OpenWeatherMap API
 
-## 📸 Preview
-(Add screenshots here later)
-
-## 🔗 Live Demo
-(Add Netlify/Vercel link here later)
-
-## 📦 Installation
-1. Clone repo
-2. Open index.html
+## 📦 Run locally
+1. Clone the repo
+2. (Optional) swap the `API_KEY` in `script.js` for your own free OpenWeatherMap key
+3. Open `index.html` in your browser
 
 ## 👨‍💻 Author
-Lindokuhle Nyoka
+**Lindokuhle Nyoka** · [GitHub](https://github.com/lk-nyoka) · [LinkedIn](https://linkedin.com/in/lindokuhle-nyoka-a5b737413)
